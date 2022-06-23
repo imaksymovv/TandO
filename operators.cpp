@@ -5,24 +5,23 @@ int main()
 	int a = 2;
 	int b = 3;
 	int c, result;
-	std::cout << "enter the number of your operand(& = 1, ^ = 2, | = 3, ~ = 4):" << std::endl;
-	std::cin >> c;
-	if (c == 1) {
+	std::cout << "enter your operands" << std::endl;
+	std::cout << "a = ";
+	std::cin >> a;
+	std::cout << "b = ";
+	std::cin >> b;
+
 		result = a & b;
-		std::cout << "Result = "<< result << std::endl;
-	}
-	else if(c == 2){
+		std::cout << "a & b = "<< result << std::endl;
+
 		result = a ^ b;
-		std::cout << "Result = " << result << std::endl;
-	}
-	else if (c == 3) {
+		std::cout << "a ^ b = " << result << std::endl;
+	
 		result = a | b;
-		std::cout << "Result = " << result << std::endl;
-	}
-	else if (c == 4) {
+		std::cout << "a | b = " << result << std::endl;
+	
 		result = ~(a + b);
-		std::cout << "Result = " << result << std::endl;
-	}
+		std::cout << "~(a + b) = " << result << std::endl;
 
 	return 0;
 }
